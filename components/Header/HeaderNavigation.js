@@ -4,15 +4,18 @@ import tw, { css, styled, theme } from "twin.macro";
 import { Button } from "../Button";
 
 const Root = styled.nav(() => [
-  tw`flex md:flex-row justify-between items-center`,
+  tw`flex md:flex-row flex-wrap justify-between items-center`,
   tw`p-6 border-solid border-b border-gray-400`,
 ]);
 
 const ButtonMobile = styled.div(() => [tw`block lg:hidden`]);
 
-const RootInner = styled.div(() => [tw`hidden lg:flex items-center`]);
+const RootInner = styled.div(() => [tw`md:flex hidden items-center`]);
 
-const NavLink = styled.ul(() => [tw`list-none flex flex-wrap`, tw`mr-8`]);
+const NavLink = styled.ul(() => [
+  tw`list-none flex flex-wrap flex-grow`,
+  tw`mr-8`,
+]);
 
 const NavLinkItem = styled.li(
   () => [tw`mx-5`],
@@ -29,7 +32,7 @@ export default function HeaderNavigation({ title }) {
       <Root>
         <h1>{title}</h1>
         <ButtonMobile>
-          <Button isPrimary>
+          <Button isSecondary>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

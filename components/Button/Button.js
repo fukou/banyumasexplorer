@@ -2,21 +2,21 @@ import tw, { css, styled, theme } from "twin.macro";
 
 const Button = styled.button(({ isPrimary, isSecondary, isSmall }) => [
   // The common button styles added with the tw import
-  tw`text-lg px-4 py-2 rounded focus:outline-none`,
+  tw`text-lg py-2 focus:outline-none`,
   tw`transform transition-transform duration-75`,
 
   // Use the variant grouping feature to add variants to multiple classes
   tw`hocus:(scale-105 text-yellow-400)`,
 
   // Use props to conditionally style your components
-  isPrimary && tw`bg-black text-white border-black`,
+  isPrimary && tw`px-6 bg-yellow-600 text-white border-black rounded-full`,
 
   // Combine regular css with tailwind classes within backticks
   isSecondary && [
     css`
       box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.25);
     `,
-    tw`border-2 border-yellow-600`,
+    tw`inline-flex items-center px-2 border-2 border-yellow-600 text-yellow-600 rounded`,
   ],
 
   // Conditional props can be added
@@ -24,7 +24,7 @@ const Button = styled.button(({ isPrimary, isSecondary, isSmall }) => [
 
   // The theme import can supply values from your tailwind.config.js
   css`
-    color: ${theme`colors.white`};
+    // color: ${theme`colors.white`};
   `,
 ]);
 

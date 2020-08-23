@@ -9,7 +9,7 @@ export default function Home() {
       <style jsx global>
         {reset}
       </style>
-      <HeaderNavigation title="Banyumas Explorer"></HeaderNavigation>
+      <HeaderNavigation title="Logo"></HeaderNavigation>
       <HeroImage></HeroImage>
     </>
   );
