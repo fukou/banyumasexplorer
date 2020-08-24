@@ -9,7 +9,7 @@ const Button = styled.button(({ isPrimary, isSecondary, isSmall }) => [
   tw`hocus:(scale-105)`,
 
   // Use props to conditionally style your components
-  isPrimary && tw`px-6 bg-orange text-white border-black rounded-full`,
+  isPrimary && tw`px-6 bg-pink text-white border-black rounded-full`,
 
   // Combine regular css with tailwind classes within backticks
   isSecondary && [
