@@ -2,7 +2,7 @@ import tw, { css, styled, theme } from "twin.macro";
 
 const Hero = styled.section(() => [
   tw`w-full`,
-  tw`h-64 lg:min-h-0 lg:py-64 flex items-center justify-center`,
+  tw`h-64 lg:min-h-0 lg:py-64 flex items-center`,
   css`
     background: linear-gradient(
       120deg,
@@ -13,7 +13,7 @@ const Hero = styled.section(() => [
 ]);
 
 const HeroTitle = styled.h1(() => [
-  tw`text-3xl sm:text-4xl lg:text-5xl font-bold text-white`,
+  tw`max-w-6xl mx-auto text-3xl sm:text-4xl lg:text-5xl font-bold text-white`,
 ]);
 
 export default function HeroImage() {

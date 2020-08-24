@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "../Layout/Link";
 import tw, { css, styled, theme } from "twin.macro";
 
 import { Button } from "../Button";
@@ -8,7 +8,7 @@ const Root = styled.nav(() => [
   tw`p-6 border-solid border-b border-gray-400 bg-white shadow-lg`,
 ]);
 
-const ButtonMobile = styled.div(() => [tw`block lg:hidden`]);
+const ButtonMobile = styled.div(() => [tw`block md:hidden`]);
 
 const RootInner = styled.div(() => [tw`md:flex hidden items-center`]);
 
@@ -22,6 +22,12 @@ const NavLinkItem = styled.li(
   css`
     &:hover {
       text-decoration: underline;
+    }
+
+    a {
+      &.selected {
+        font-weight: bold;
+      }
     }
   `
 );
