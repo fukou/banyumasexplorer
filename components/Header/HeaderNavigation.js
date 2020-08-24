@@ -5,7 +5,7 @@ import { Button } from "../Button";
 
 const Root = styled.nav(() => [
   tw`flex md:flex-row flex-wrap justify-between items-center`,
-  tw`p-6 border-solid border-b border-gray-400`,
+  tw`p-6 border-solid border-b border-gray-400 bg-white shadow-lg`,
 ]);
 
 const ButtonMobile = styled.div(() => [tw`block lg:hidden`]);
@@ -14,7 +14,7 @@ const RootInner = styled.div(() => [tw`md:flex hidden items-center`]);
 
 const NavLink = styled.ul(() => [
   tw`list-none flex flex-wrap flex-grow`,
-  tw`mr-8`,
+  tw`mr-6`,
 ]);
 
 const NavLinkItem = styled.li(
@@ -53,13 +53,19 @@ export default function HeaderNavigation({ title }) {
         <RootInner>
           <NavLink>
             <NavLinkItem>
-              <Link href="/">Home</Link>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </NavLinkItem>
             <NavLinkItem>
-              <Link href="/about">About us</Link>
+              <Link href="/about">
+                <a>About us</a>
+              </Link>
             </NavLinkItem>
             <NavLinkItem>
-              <Link href="/features">Features</Link>
+              <Link href="/features">
+                <a>Features</a>
+              </Link>
             </NavLinkItem>
           </NavLink>
           <Button isPrimary>Login</Button>

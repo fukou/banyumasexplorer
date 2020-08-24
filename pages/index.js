@@ -1,5 +1,6 @@
 import React from "react";
 import { HeaderNavigation, HeroImage } from "../components/Header";
+import Featured from "../components/Featured/Featured";
 
 import reset from "../styles/reset";
 
@@ -11,6 +12,7 @@ export default function Home() {
       </style>
       <HeaderNavigation title="Logo"></HeaderNavigation>
       <HeroImage></HeroImage>
+      <Featured></Featured>
     </>
   );
 }

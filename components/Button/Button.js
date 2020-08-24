@@ -6,17 +6,17 @@ const Button = styled.button(({ isPrimary, isSecondary, isSmall }) => [
   tw`transform transition-transform duration-75`,
 
   // Use the variant grouping feature to add variants to multiple classes
-  tw`hocus:(scale-105 text-yellow-400)`,
+  tw`hocus:(scale-105)`,
 
   // Use props to conditionally style your components
-  isPrimary && tw`px-6 bg-yellow-600 text-white border-black rounded-full`,
+  isPrimary && tw`px-6 bg-orange text-white border-black rounded-full`,
 
   // Combine regular css with tailwind classes within backticks
   isSecondary && [
     css`
       box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.25);
     `,
-    tw`inline-flex items-center px-2 border-2 border-yellow-600 text-yellow-600 rounded`,
+    tw`inline-flex items-center px-2 border-2 border-orange text-orange rounded`,
   ],
 
   // Conditional props can be added

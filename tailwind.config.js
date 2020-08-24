@@ -2,8 +2,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        electric: "#db00ff",
-        ribbon: "#0047ff",
+        red: "#e53e3e",
+        orange: "#F6AC56",
+        pink: "#ED64A1",
       },
     },
   },

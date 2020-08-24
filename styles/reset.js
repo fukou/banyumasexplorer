@@ -71,6 +71,16 @@ const reset = css.global`
   html {
     font-family: "Inter", sans-serif;
   }
+
+  @media (max-width: 60rem) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  body {
+    background-color: #f9f9f9;
+  }
 `;
 
 export default reset;

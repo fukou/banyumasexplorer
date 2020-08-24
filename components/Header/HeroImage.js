@@ -1,11 +1,20 @@
-import tw, { css, styled } from "twin.macro";
+import tw, { css, styled, theme } from "twin.macro";
 
 const Hero = styled.section(() => [
-  tw`w-full bg-gray-200`,
+  tw`w-full`,
   tw`h-64 lg:min-h-0 lg:py-64 flex items-center justify-center`,
+  css`
+    background: linear-gradient(
+      120deg,
+      ${theme`colors.orange`},
+      ${theme`colors.pink`}
+    );
+  `,
 ]);
 
-const HeroTitle = styled.h1(() => [tw`text-2xl md:text-5xl font-bold`]);
+const HeroTitle = styled.h1(() => [
+  tw`text-3xl sm:text-4xl lg:text-5xl font-bold text-white`,
+]);
 
 export default function HeroImage() {
   return (
