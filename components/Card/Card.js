@@ -9,7 +9,7 @@ const Cards = styled.article(() => [
 const CardsIcon = styled.div(() => [tw`flex justify-center`, tw`pt-6 -mb-6`]);
 
 const CardsTitle = styled.h2(() => [
-  tw`px-6 py-4 font-bold text-xl mb-2`,
+  tw`py-4 font-bold text-xl mb-2`,
   tw`border-solid border-b border-gray-300`,
 ]);
 

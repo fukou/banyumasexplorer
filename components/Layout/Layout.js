@@ -1,6 +1,11 @@
 import { HeaderNavigation, HeroImage } from "../Header";
 import reset from "../../styles/reset";
 import SEO from "./SEO";
+import { Footer } from "../Footer";
+
+import tw, { css, styled } from "twin.macro";
+
+const Root = styled.main(() => [tw`min-h-screen pb-8`]);
 
 export default function Layout({ children, pageTitle }) {
   return (
@@ -10,7 +15,12 @@ export default function Layout({ children, pageTitle }) {
         {reset}
       </style>
       <HeaderNavigation title="Logo"></HeaderNavigation>
-      {children}
+      <Root>{children}</Root>
+      <Footer>
+        &copy; {new Date().getFullYear()} Banyumas Explorer
+        <br />
+        All rights reserved.
+      </Footer>
     </>
   );
 }
