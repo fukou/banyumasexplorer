@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Layout } from "../components/Layout";
 
 import tw, { css, styled, theme } from "twin.macro";
@@ -11,19 +12,25 @@ const Root = styled.section(() => [
       font-size: 1.85em;
       margin-bottom: 1rem;
     }
+
+    a {
+      text-decoration: underline;
+    }
   `,
 ]);
 
-export default function Home() {
+export default function CustomError() {
   return (
     <>
-      <Layout pageTitle="About">
-        <Root id="main">
-          <h1>About us</h1>
+      <Layout pageTitle="Not Found">
+        <Root>
+          <h1>The page you're looking for cannot be found.</h1>
           <p>
-            Banyumas Explorer is an a mobile apps to provide information about
-            tourist attractions, specifically Banyumas. The users can also book
-            a ticket by choosing which places they are interested in.
+            They might be deleted or unavailable. You can go back to{" "}
+            <Link href="/">
+              <a>home page</a>
+            </Link>
+            .
           </p>
         </Root>
       </Layout>

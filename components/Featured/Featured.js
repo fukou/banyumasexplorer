@@ -9,7 +9,7 @@ const Wrapper = styled.section(() => [
 export default function Featured() {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="main">
         <Card
           icon={
             <svg
@@ -46,7 +46,7 @@ export default function Featured() {
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
             </svg>
           }
-          title="Bookmark your favorite place"
+          title="Bookmark your favorite"
           desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil"
         />
         <Card

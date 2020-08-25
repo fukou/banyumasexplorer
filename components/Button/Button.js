@@ -16,7 +16,7 @@ const Button = styled.button(({ isPrimary, isSecondary, isSmall }) => [
     css`
       box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.25);
     `,
-    tw`inline-flex items-center px-2 border-2 border-orange text-orange rounded`,
+    tw`inline-flex items-center px-2 border-2 border-gray-800 text-gray-800 rounded`,
   ],
 
   // Conditional props can be added

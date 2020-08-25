@@ -15,7 +15,7 @@ const SEO = ({ pageTitle }) => (
       property="og:description"
       content="Banyumas Explorer is ...."
     />
-    <meta property="og:site_name" content="Faiz Ichsan Jaya" />
+    <meta property="og:site_name" content="" />
     <meta property="og:url" content="" />
     {/* <link rel="icon" type="image/png" href="/images/favicon.ico" />
     <link rel="apple-touch-icon" href="/images/favicon.ico" />

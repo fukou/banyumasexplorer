@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
@@ -38,6 +38,9 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <a className="skip-to-content-link" href="#main">
+            Skip to content
+          </a>
           <Main />
           <NextScript />
         </body>

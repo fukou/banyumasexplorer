@@ -81,6 +81,22 @@ const reset = css.global`
   body {
     background-color: #f9f9f9;
   }
+
+  .skip-to-content-link {
+    display: grid;
+    place-items: center;
+    background: #fff;
+    left: 40%;
+    padding: 8px;
+    position: absolute;
+    border: 2px solid #333;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
 `;
 
 export default reset;

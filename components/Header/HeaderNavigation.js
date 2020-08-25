@@ -14,20 +14,30 @@ const RootInner = styled.div(() => [tw`md:flex hidden items-center`]);
 
 const NavLink = styled.ul(() => [
   tw`list-none flex flex-wrap flex-grow`,
-  tw`mr-4`,
+  tw`mr-8`,
 ]);
 
 const NavLinkItem = styled.li(
-  () => [tw`mx-5`],
+  () => [tw`mx-2`],
   css`
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
     }
 
     a {
+      padding: 0.5rem 0.85rem;
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      transition:all 0.45s ease-in-out;
+
       &.selected {
         font-weight: bold;
-        color: ${theme`colors.pink`};
+        // color: ${theme`colors.pink`};
+        background: rgba(0, 0, 0, 0.075);
+      }
+
+      &:hover, &:focus {
+        background: rgba(0, 0, 0, 0.075);
       }
     }
   `
@@ -39,7 +49,7 @@ export default function HeaderNavigation({ title }) {
       <Root>
         <h1>{title}</h1>
         <ButtonMobile>
-          <Button isSecondary>
+          <Button isSecondary aria-label="Button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -70,12 +80,12 @@ export default function HeaderNavigation({ title }) {
               </Link>
             </NavLinkItem>
             <NavLinkItem>
-              <Link href="/features">
+              <Link href="/login">
                 <a>Login</a>
               </Link>
             </NavLinkItem>
           </NavLink>
-          <Button isPrimary>Register</Button>
+          <Button isPrimary>Download</Button>
         </RootInner>
       </Root>
     </>
