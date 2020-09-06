@@ -13,7 +13,7 @@ const SEO = ({ pageTitle }) => (
     <meta
       name="og:description"
       property="og:description"
-      content="Banyumas Explorer is ...."
+      content="Banyumas Explorer is an app for..."
     />
     <meta property="og:site_name" content="" />
     <meta property="og:url" content="" />

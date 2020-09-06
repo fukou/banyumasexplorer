@@ -28,7 +28,7 @@ const LoginWrapperButton = styled.div(() => [
 export default function Home() {
   return (
     <>
-      <Layout pageTitle="Login">
+      <Layout pageTitle="Masuk">
         <Root id="main">
           <h1>Login</h1>
           <LoginWrapper>
@@ -72,7 +72,7 @@ export default function Home() {
                 ]}
                 type="button"
               >
-                Sign In
+                Masuk
               </button>
               <a
                 css={[
@@ -80,7 +80,7 @@ export default function Home() {
                 ]}
                 href="#"
               >
-                Forgot Password?
+                Lupa password?
               </a>
             </LoginWrapperButton>
           </LoginWrapper>

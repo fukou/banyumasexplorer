@@ -17,13 +17,13 @@ const Root = styled.section(() => [
 export default function Home() {
   return (
     <>
-      <Layout pageTitle="About">
+      <Layout pageTitle="Tentang kami">
         <Root id="main">
-          <h1>About us</h1>
+          <h1>Tentang kami</h1>
           <p>
-            Banyumas Explorer is an a mobile apps to provide information about
-            tourist attractions, specifically Banyumas. The users can also book
-            a ticket by choosing which places they are interested in.
+            Banyumas Explorer adalah aplikasi mobile untuk memberikan informasi
+            tentang tempat wisata, khususnya Banyumas. Pengguna juga dapat
+            memesan tiket dengan memilih tempat yang mereka minati.
           </p>
         </Root>
       </Layout>

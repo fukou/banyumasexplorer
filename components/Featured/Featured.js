@@ -27,8 +27,8 @@ export default function Featured() {
               <circle cx="12" cy="10" r="3" />
             </svg>
           }
-          title="Search your destination"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil"
+          title="Cari destinasimu"
+          desc="Gunakan fitur pencarian untuk menemukan destinasi impian Anda."
         />
         <Card
           icon={
@@ -46,8 +46,8 @@ export default function Featured() {
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
             </svg>
           }
-          title="Bookmark your favorite"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil"
+          title="Simpan tempat favoritmu"
+          desc="Jangan lupakan destinasi favorit Anda dan simpan tempat yang ingin Anda tuju"
         />
         <Card
           icon={
@@ -65,8 +65,8 @@ export default function Featured() {
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
             </svg>
           }
-          title="Book your ticket"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil"
+          title="Pesan tiketmu"
+          desc="Beli tiket tempat wisata impian Anda di Banyumas tanpa perlu mengantri lagi!"
         />
       </Wrapper>
     </>
